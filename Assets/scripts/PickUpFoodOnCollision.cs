@@ -1,0 +1,13 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PickUpFoodOnCollision : MonoBehaviour {
+
+	void OnTriggerEnter(Collider other) {
+		if (other.gameObject.CompareTag("Food")) {
+        	Destroy(other.gameObject);
+		}
+     }
+
+}
