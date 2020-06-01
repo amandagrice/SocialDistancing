@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickUpFoodOnCollision : MonoBehaviour {
 
+	public int goalCount = 5;
     private Animator[] Animators;
 	public static GameObject CollidedItem;
 
@@ -25,6 +27,10 @@ public class PickUpFoodOnCollision : MonoBehaviour {
      			Animators[i].SetTrigger("Pickup");
      		}
             Destroy(CollidedItem);
+            goalCount--;
+            if (goalCount == 0) {
+        		Application.LoadLevel(2);
+        	}
         }
      }
 

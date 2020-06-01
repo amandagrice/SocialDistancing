@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Main.unity
     guid: 006605c48010a2842806117e8954be90
+  - enabled: 1
+    path: Assets/Win.unity
+    guid: 64074a61f02f0364b818a897d63892bc
+  - enabled: 1
+    path: Assets/Lose.unity
+    guid: 1120fe38f0982e34ba97ab545d07da83
   m_configObjects: {}
