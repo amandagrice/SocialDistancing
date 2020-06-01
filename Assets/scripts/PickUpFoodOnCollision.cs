@@ -21,7 +21,9 @@ public class PickUpFoodOnCollision : MonoBehaviour {
 
      void Update() {
      	if (Input.GetKeyDown(KeyCode.E) && CollidedItem && CollidedItem.CompareTag("Food")) {
-     		Animators[0].SetTrigger("Pickup");
+     		for(int i = 0; i < Animators.Length; i++) {
+     			Animators[i].SetTrigger("Pickup");
+     		}
             Destroy(CollidedItem);
         }
      }
