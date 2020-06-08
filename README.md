@@ -6,6 +6,10 @@ A silly I made while bored out of my mind during the covid-19 quarantine. The go
 
 Practice social distancing! If you get close to a zombie, you lose. If you collect all the groceries in the area, you win. Good luck!
 
+## Screenshot
+
+![screenshot](https://github.com/amandagrice/SocialDistancing/blob/master/Screenshots/screenshot2.PNG)
+
 ## Controls
 
 | Action | Controls     |
